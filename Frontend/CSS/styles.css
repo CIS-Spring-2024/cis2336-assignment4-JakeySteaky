@@ -37,6 +37,7 @@ footer {
 
     width: 100vw;
     height: 60px;
+    z-index: 20;
 
     background-color: var(--Red);
     box-shadow: 10px 10px 10px black;
@@ -59,7 +60,7 @@ footer {
     height: 80px;
 
     background-color: white;
-    box-shadow: 5px 5px 5px black;
+    box-shadow: 0px 10px 10px black;
 }
 .nav1 button {
     width: 150px;
@@ -96,26 +97,6 @@ footer {
 .nav1 button:hover {
     border-bottom: 5px solid var(--Red);
     border-radius: 2.5px;
-}
-
-/* Cart */
-
-.cart {
-    position: absolute;
-    
-    top: 140px;
-    right: 0px;
-    width: 0vw;
-    height: var(--PageHeight);
-
-    visibility: visible;
-    background-color: white;
-    border: 2px solid black;
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
-    border-right: none;
-
-    transition: width .25s ease-in-out;
 }
 
 /* Page */
@@ -171,6 +152,7 @@ footer {
 .page section {
     display: flex;
     flex-direction: row;
+    justify-content: center;
 
     width: 75%;
     margin: 0px 20px;
@@ -185,7 +167,7 @@ footer {
 }
 .page button {
     width: fit-content;
-    min-width: 100px;
+    min-width: 150px;
     height: 60px;
     margin: 5px 10px;
     padding: 0px 20px;
@@ -247,5 +229,79 @@ footer {
 }
 
 #menuBox .menuItem:hover {
-    height: 100px;
+    height: 55px;
+}
+
+/* Cart */
+
+.cart {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    top: 140px;
+    right: 0px;
+    width: 0vw;
+    height: var(--PageHeight);
+
+    background-color: white;
+    border: 2px solid black;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-right: none;
+
+    transition: width .25s ease-in-out;
+}
+
+.cart h1 {
+    width: inherit;
+    margin-top: 20px;
+
+    font-size: 25px;
+    text-align: center;
+}
+
+#cartBox {
+    display: flex;
+    flex-direction: column;
+    justify-content:left;
+    align-items: center;
+    overflow: scroll;
+
+    width: 75%;
+    height: 75%;
+    margin: 0px 50px;
+}
+
+#cartBox .cartItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    width: 95%;
+    height: 50px;
+    margin: 2.5px;
+
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+#cartBox .cartItem div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 90%;
+    height: 50px;
+
+    color: black;
+}
+
+#cartBox .cartItem:hover {
+    height: 55px;
 }
