@@ -304,4 +304,31 @@ footer {
 
 #cartBox .cartItem:hover {
     height: 55px;
+    background-color: var(--Red);
+}
+
+#totalBox {
+    width: 50%;
+    height: 40px;
+    padding-top: 20px;
+    color: black;
+    text-align: center;
+    align-items: center;
+}
+
+.orderButton {
+    width: inherit;
+    max-width: 200px;
+    height: 60px;
+
+    font-size: 20px;
+    color: white;
+
+    background-color: var(--Red);
+    border: 0px solid transparent;
+    border-radius: 30px;
+}
+
+.orderButton:hover {
+    filter: brightness(75%);
 }

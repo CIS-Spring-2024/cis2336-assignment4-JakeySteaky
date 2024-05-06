@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/Frontend/CSS/styles.css">
-    <script src="/Backend/backendScript.js"></script>
-    <script src="/Backend/script.js"></script>
+    <script src="/Frontend/JS/script.js"></script>
 
     <title>UH EATS</title>
 </head>
@@ -24,11 +23,15 @@
     </nav>
 
     <nav class="cart">
+        <h1>Shopping Cart</h1>
+        <hr class="divider" style="background-color: black; border: 1px solid black;">
         <div id="cartBox">
             <!-- Dyanimc Cart Items-->
         </div>
+        <div id="totalBox"></div>
+        <button onclick="alert('Order Placed!')" class="orderButton">Place Order</button>
+        <hr class="divider">
     </nav>
-
     <div class="page">
         <img class="backdropImg" src="/Frontend/IMAGES/background0.jpeg" alt="/">
         <hr class="vingette"></hr>
